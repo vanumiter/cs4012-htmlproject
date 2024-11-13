@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="About Alan Turing and the Turing Machine">
-    <link href="Stylesheet.css">
+    <link rel="stylesheet" href="Stylesheet.css">
     <title>Alan Turing</title>
 </head>
 <body>
     <h1><ins>Alan Mathison Turing</ins></h1>
         <br>
             <h1><b>About</b></h1>
+            <img src="Alan_Turing.jpg" alt="Alan Turing" id="imgright" >
     <div>
-        <h2>Born 23 June 1912 London</h2>
-        <h2>Alan was famous for his contribution developing the first modern computer </h2>
-        <h2>Alan studied in both Cambridge and Princeton Universities</h2>
-        <h2>Turing was working part-time for the Brititsh Government before </h2>
+        <h2>- Born 23 June 1912 London</h2>
+        <h2>- Alan was famous for his contribution developing the first modern computer </h2>
+        <h2>- Alan studied in both Cambridge and Princeton Universities</h2>
+        <h2>- Turing was working part-time for the Brititsh Government before </h2>
     </div>
     <br>
     <h1><b>War Contribution</b></h1>
@@ -30,20 +31,28 @@
     <div> 
         <h2>The Turing machine is a theoretical mathematical model of computation . It describes an abstract machine . That has the capabilities to manipulate symbols on a strip of tape in relation to a table of rules. Which was invented in 1936. Alan would come to call it an automatic machine.</h2>
         <h2>It consists of a long tape, which is divided into squares. Each one containing a symbol. This tape consists of infinite cells where each cell contains an input symbol or a special symbol called a blank. There's also a head pointer that points to the cell being read. All the components allow this machine, to read, write one step left or right.</h2>
-        <h1><b>How the Turing Machine Works:</b></h1>
-        <ol> <h2>
-            <li>Initial Setup: The machine starts in an initial state (Start) with the head positioned facing the first square of the tape. The tape contains some input data, and the rest of the tape may be blank. The machien will start on first symbol on the tape.</li>
-            <li>Reading the Symbol: The machine then reads the symbol currently under the head. Depending on the symbol and it's current state, the machine will be told it's next instruction.</li>
-            <li>Writing a Symbol: Based on the transition rules, the machine might write a new symbol on the tape. Whilst if no rules apply the symbol will be left the same.</li>
-            <li>Moving the Head: The transition function also tells the machine whether to move the head left or right by one square on the tape. This movement allows the machine to process the next part of the input.</li>
-            <li>Changing the State: After reading, writing, and moving, the machine will move to the next state, specified by the transition function. The state determines the next action of the machine.</li>
-            <li>Repeat: </li> 
-                <h2>It continues to read symbols, write new symbols, move the head, and transition between states until it reaches a halt state. The halt state signifies that the machine has completed the computation.</h2>
-        </ol></h2>
-        <img src="Turing model.png" height="300" >
         <br>
-        <h2>Despite its simplicity, it can simulate any computer algorithm. </h2>
+        <h1><b>How the Turing Machine Works:</b></h1>
+       
+        <ol> <h2>
+            <li>Initial Setup: </li>
+                <p>The machine starts in an initial state (Start) with the head positioned facing the first square of the tape. The tape contains some input data, and the rest of the tape may be blank. The machine will start on first symbol on the tape.</p>
+            <li>Reading the Symbol: </li>
+                <p>The machine then reads the symbol currently under the head. Depending on the symbol and it's current state, the machine will be told it's next instruction.</p>
+            <li>Writing a Symbol: </li>
+                <p>Based on the transition rules, the machine might write a new symbol on the tape. Whilst if no rules apply the symbol will be left the same.</p>
+            <li>Moving the Head: </li>
+                <p>The transition function also tells the machine whether to move the head left or right by one square on the tape. This movement allows the machine to process the next part of the input.</p>
+            <li>Changing the State: </li>
+                <p>After reading, writing, and moving, the machine will move to the next state, specified by the transition function. The state determines the next action of the machine.</p>
+            <li>Repeat: </li> 
+                <p>It continues to read symbols, write new symbols, move the head, and transition between states until it reaches a halt state. The halt state signifies that the machine has completed the computation.</p>
+        </ol></h2>
+        <img src="Turing model.png"  >
+        <br>
+       
     </div>
+    
 
 </body>
 </html>
