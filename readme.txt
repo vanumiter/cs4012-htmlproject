@@ -4,7 +4,7 @@
         abacus in Egypt,
         early mechanical calculators
         analytical engine 
-    2. turing machine (long)
+    2. turing machine (long) (Done)
     3. eniac, first computer (short)
     4. von neumann (long)
     5. transistor (short)
