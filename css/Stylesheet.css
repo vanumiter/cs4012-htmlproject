@@ -93,6 +93,13 @@
     width: 50%;
   }
 
+  #imgright2 {
+    float: right;
+     margin: 0 15px 0 0;
+     width: 20%;
+    }
+
+
 /* hides underline in a tags */
  .no-underline {
   text-decoration: none;
