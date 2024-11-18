@@ -12,6 +12,10 @@
     font-size: 50px;
   }
 
+  html, body{
+    height:100%;
+  }
+
   body{
     margin: 0;
     padding: 0;
@@ -66,6 +70,7 @@
     clear: both;
   }
 
+  /* provides the "boxed in" look of the content within the card class */
   .card {
     background-color: white;
     padding: 20px;
@@ -80,13 +85,14 @@
     }
   }
   
-
+/* makes image appear to the left of text */
   #imgleft {
     float: left;
      margin: 0 15px 0 0;
      width: 10%;
     }
   
+    /* makes image appear to the right of text */
   #imgright {
     float: right;
     margin: 0 15px 0 0;

@@ -11,17 +11,47 @@
     <title>The Turing Machine</title>
 </head>
 
+    <!-- animation -->
+    <style> 
+
+        body {
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        .timeline {
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out 0.5s forwards;
+        }
+
+        .rightcolumn {
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out 1.2s forwards;
+        }
+
+        @keyframes fadeIn {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
+        
+    </style>
+
+
 <body>
+    <!-- header -->
     <div class = "header">
         <h1>History of Computer Science</h1>
     </div>
 
+    <!-- navigation bar -->
     <div class="TopMenu">
         <a href="../Main.html">Timeline</a>
         <a href="../List.html">List</a>
         <a href="../About.html">About</a>
     </div>
 
+    <!--timeline on left-->
     <div class="row">
         <div class="leftcolumn">
             <div class="timeline">
@@ -52,7 +82,7 @@
         </div>
     </div>
 
-
+    <!--main content on right-->
     <div class="row">
         <div class="rightcolumn">
             <div class="card">

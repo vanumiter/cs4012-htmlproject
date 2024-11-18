@@ -8,18 +8,50 @@
     <link rel="stylesheet" href="../../css/timelinesmall.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>ENIAC</title>
+
+    <!-- animation -->
+    <style> 
+
+        body {
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        .timeline {
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out 0.5s forwards;
+        }
+
+        .rightcolumn {
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out 1.2s forwards;
+        }
+
+        @keyframes fadeIn {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
+        
+    </style>
+
 </head>
 <body>
+
+<!-- header -->
 <div class = "header">
     <h1>History of Computer Science</h1>
 </div>
 
+
+<!-- navigation bar -->
 <div class="TopMenu">
     <a href="../Main.html">Timeline</a>
     <a href="../List.html">List</a>
     <a href="../About.html">About</a>
 </div>
 
+<!--timeline on left-->
 <div class="row">
     <div class="leftcolumn">
         <div class="timeline">
@@ -49,42 +81,43 @@
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="rightcolumn">
-            <div class="card">
-                <section class="w3-container">
-                    <h2><b>The ENIAC machine</b></h2>
-                    <p>The ENIAC or short for Electronic Numerical Integrator and Computer was the product of a US government funded project during the WWII, to build the first programmable Computer. The project took place in the University of Pennsylvania's Moore School of Engineering.</p>
-                    <p>The ENIAC was built by John Mauchly an american physicist, J. Presper Eckert, Jr, an american engineer and their colleagues led by Herman Goldstine.</p>
-                    <p>The Project started in 1943 and ended in 1946 Febuary, costing 400,000 dollars and the war had already ended. </p>
 
-                </section>
+<!--main content on right-->
+<div class="row">
+    <div class="rightcolumn">
+        <div class="card">
+            <section class="w3-container">
+                <h2><b>The ENIAC machine</b></h2>
+                <p>The ENIAC or short for Electronic Numerical Integrator and Computer was the product of a US government funded project during the WWII, to build the first programmable Computer. The project took place in the University of Pennsylvania's Moore School of Engineering.</p>
+                <p>The ENIAC was built by John Mauchly an american physicist, J. Presper Eckert, Jr, an american engineer and their colleagues led by Herman Goldstine.</p>
+                <p>The Project started in 1943 and ended in 1946 Febuary, costing 400,000 dollars and the war had already ended. </p>
 
-                <section class="w3-container">
-                    <h2><b>What was it made for?</b></h2>
-                    <div>
-                        <p>The ENIAC was built for a specific operation, which was to compute the values of artillery range table.</p>
-                        <p>However, when the project finished the war had already ended, the first operation of the ENIAC was for the construction of the hydrogen bomb.</p>
-                        <br>
-                        <h2><b>How the ENIAC Worked</b></h2>
-                        <p>The ENIAC was built using a plugboard to relay the instructions. After the ENIAC was given the instructions, it ran at a speed uncomparable to mechanical devices at the time.</p>
-                        <p>However, the ENIAC also had its weakness which was the time required to program the computer. Everytime the instruction needed to be changed, the whole plugboard needed to be reorganized, taking few days until the instruction could be ran.</p>
-                        <p>Even with its downside, ENIAC was by far the most powerful calculating device built in its time. And to this day it is considered the first general electronic digital computer which is programmable.</p>
+            </section>
 
-                        <br>
-                    </div>
-                </section>
+            <section class="w3-container">
+                <h2><b>What was it made for?</b></h2>
+                <div>
+                    <p>The ENIAC was built for a specific operation, which was to compute the values of artillery range table.</p>
+                    <p>However, when the project finished the war had already ended, the first operation of the ENIAC was for the construction of the hydrogen bomb.</p>
+                    <br>
+                    <h2><b>How the ENIAC Worked</b></h2>
+                    <p>The ENIAC was built using a plugboard to relay the instructions. After the ENIAC was given the instructions, it ran at a speed uncomparable to mechanical devices at the time.</p>
+                    <p>However, the ENIAC also had its weakness which was the time required to program the computer. Everytime the instruction needed to be changed, the whole plugboard needed to be reorganized, taking few days until the instruction could be ran.</p>
+                    <p>Even with its downside, ENIAC was by far the most powerful calculating device built in its time. And to this day it is considered the first general electronic digital computer which is programmable.</p>
 
-                <section class="w3-container">
-                    <div>
-                        <h2><b>How did it look like?</b></h2>
-                        <img src="../Images/ENIAC_Penn1.jpg" alt="ENIAC_pic" id="imgright">
-                        <p>The ENIAC took up 135 meter squared, where 40 U shaped panels were put up across 3 walls of the room.</p>
-                        <p>The ENIAC consisted of 17,000 vacuum tubes, 70,000 resistors, 10,000 capacitors, 6000 switches and 1500 relays making it a very complex electronic system.</p>
-                        <p>It also produced so much heat, that the ENIAC required its own air conditioning system to keep it from overheating.</p>
-                    </div>
-                </section>
-            </div>
+                    <br>
+                </div>
+            </section>
+
+            <section class="w3-container">
+                <div>
+                    <h2><b>How did it look like?</b></h2>
+                    <img src="../Images/ENIAC_Penn1.jpg" alt="ENIAC_pic" id="imgright">
+                    <p>The ENIAC took up 135 meter squared, where 40 U shaped panels were put up across 3 walls of the room.</p>
+                    <p>The ENIAC consisted of 17,000 vacuum tubes, 70,000 resistors, 10,000 capacitors, 6000 switches and 1500 relays making it a very complex electronic system.</p>
+                    <p>It also produced so much heat, that the ENIAC required its own air conditioning system to keep it from overheating.</p>
+                </div>
+            </section>
         </div>
     </div>
 </div>
