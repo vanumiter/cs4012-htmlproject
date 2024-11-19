@@ -110,3 +110,13 @@
  .no-underline {
   text-decoration: none;
  }
+
+  .About {
+    text-align: center;
+    padding: 20px;
+    }
+  
+  .List { 
+    text-align: center;
+    padding: 20px;
+  }
