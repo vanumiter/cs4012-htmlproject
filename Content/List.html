@@ -7,6 +7,26 @@
     <link rel="stylesheet" href="../css/Stylesheet.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>List</title>
+
+    <style> 
+
+      body {
+          opacity: 0;
+          animation: fadeIn 1s ease-in-out forwards;
+      }
+
+      .timeline {
+          opacity: 0;
+          animation: fadeIn 2s ease 0.5s forwards;
+      }
+
+      @keyframes fadeIn {
+          0% {opacity: 0;}
+          100% {opacity: 1;}
+      }
+
+      
+  </style>
 </head>
 <body>
   <div class = "header">
@@ -17,19 +37,22 @@
     <a href="Main.html">Timeline</a>
     <a class="active"href="List.html">List</a>
     <a href="About.html">About</a>
-</div>
-<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+  </div>
 
-  <ul id="myUL">
-    <li><a href="#">Adele</a></li>
-    <li><a href="#">Agnes</a></li>
+  <div class="List">
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
 
-    <li><a href="#">Billy</a></li>
-    <li><a href="#">Bob</a></li>
+      <ul id="myUL" class="List">
+        <li><a href="#">Adele</a></li>
+        <li><a href="Milestones/Alan Turing.html">Turing Machine</a></li>
 
-    <li><a href="#">Calvin</a></li>
-    <li><a href="#">Christina</a></li>
-    <li><a href="#">Cindy</a></li>
-  </ul>
+        <li><a href="Milestones/ENIAC.html">ENIAC </a></li>
+        <li><a href="#">Bob</a></li>
+
+        <li><a href="Milestones/Transistor.html">Tranisistor</a></li>
+        <li><a href="#">Christina</a></li>
+        <li><a href="#">Cindy</a></li>
+      </ul>
+  </div>
 </body>
 </html>
