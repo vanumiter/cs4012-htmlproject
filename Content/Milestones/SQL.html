@@ -5,77 +5,185 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>How SQL Injection Works</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../../css/Stylesheet.css">
+    <link rel="stylesheet" href="../../css/timelinesmall.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+
+    <!-- animation -->
+    <style> 
+
+        body {
+            opacity: 0;
+            animation: fadeIn 0.5s ease-in-out forwards;
+        }
+
+        .leftcolumn {
+            opacity: 0;
+            animation: fadeIn 0.5s ease-in-out 0.5s forwards;
+        }
+
+        .rightcolumn {
+            opacity: 0;
+            animation: fadeIn 0.5s ease-in-out 1.2s forwards;
+        }
+
+        @keyframes fadeIn {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
+        
+    </style>
+
 </head>
+
+
 <body>
 
-<h1>How SQL Injection Works</h1>
 
-<p>SQL Injection occurs when a web application passes unfiltered user input to an SQL query. If the application doesn’t properly sanitize the input, an attacker can inject malicious SQL code that will be executed by the database server. Here's a breakdown of how this works:</p>
+    <div class = "header">
+        <h1>History of Computer Science</h1>
+    </div>
 
-<h2>User Input Is Not Properly Sanitized</h2>
-<p>Many web applications include forms or URL parameters where users can input data, such as search fields, login forms, or contact forms. If the input from these fields is directly inserted into an SQL query without proper validation or escaping, malicious SQL code can be injected.</p>
+    <div class="TopMenu">
+        <a href="../Main.html">Timeline</a>
+        <a href="../List.html">List</a>
+        <a href="../About.html">About</a>
+    </div>
 
-<h2>SQL Query Manipulation</h2>
-<p>The attacker exploits the vulnerability by inserting SQL commands that are then executed on the database. For example, if a website allows a user to log in by entering a username and password, the web application might construct a query like this:</p>
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="timeline">
+                <div class="container left">
+                    <div class="content">
+                        <h3>2017</h3>
+                        <p>Lorem ipsum..</p>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <h3>2016</h3>
+                        <p>Lorem ipsum..</p>
+                    </div>
+                </div>
+                <div class="container left">
+                    <div class="content">
+                        <h3>2017</h3>
+                        <p>Lorem ipsum..</p>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <h3>2016</h3>
+                        <p>Lorem ipsum..</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card" style="margin:20px; margin-top:50px;">
+                <ul class="w3-ul w3-hoverable">
+                    <a href="#modern-computers"><li>Modern Computers</li></a>
+                    <a href="#history-cybercrime"><li>A Brief History of Cybercrime</li></a>
+                    <a href="Types of attacks.html"><li>Different Types of Attacks</li>
+                    <a href="Phishing.html"><li>Phishing</li></a>
+                    <a href="DDOS.html"><li>DDoS Attacks</li></a>
+                    <a href="SQL.html"><li>SQL Injections</li></a>
+               </ul>
+            </div>
+        </div>
 
-<pre>SELECT * FROM users WHERE username = 'user_input' AND password = 'password_input';</pre>
 
-<p>An attacker could input something like this for the username field:</p>
+        <div class="rightcolumn">
+            <div class="card">
+                <section class="w3-container">
+                    <h1>SQL Injections</h1>
 
-<pre>' OR '1'='1</pre>
+                    <p>SQL Injection occurs when a web application passes unfiltered user input to an SQL query. If the application doesn’t properly sanitize the input, an attacker can inject malicious SQL code that will be executed by the database server. Here's a breakdown of how this works:</p>
+                </section>
 
-<p>This would modify the SQL query to:</p>
+                <section class="w3-container">
+                    <h2>User Input Is Not Properly Sanitized</h2>
+                    <p>Many web applications include forms or URL parameters where users can input data, such as search fields, login forms, or contact forms. If the input from these fields is directly inserted into an SQL query without proper validation or escaping, malicious SQL code can be injected.</p>
 
-<pre>SELECT * FROM users WHERE username = '' OR '1'='1' AND password = 'password_input';</pre>
+                </section>
+     
+                <section class="w3-container">
+                    <h2>SQL Query Manipulation</h2>
+                    <p>The attacker exploits the vulnerability by inserting SQL commands that are then executed on the database. For example, if a website allows a user to log in by entering a username and password, the web application might construct a query like this:</p>
+            
+                    <pre>SELECT * FROM users WHERE username = 'user_input' AND password = 'password_input';</pre>
+            
+                    <p>An attacker could input something like this for the username field:</p>
+            
+                    <pre>' OR '1'='1</pre>
+            
+                    <p>This would modify the SQL query to:</p>
+            
+                    <pre>SELECT * FROM users WHERE username = '' OR '1'='1' AND password = 'password_input';</pre>
+            
+                    <p>This condition will always evaluate as true ('1'='1'), potentially bypassing authentication.</p>
+            
+                </section>
 
-<p>This condition will always evaluate as true ('1'='1'), potentially bypassing authentication.</p>
+                <section class="w3-container">
+                    <h2>Execution of Malicious Code</h2>
+                    <p>The malicious SQL query runs on the database, potentially granting the attacker unauthorized access or allowing them to execute harmful commands, such as deleting data, altering records, or extracting sensitive information.</p>
+            
+                </section>
 
-<h2>Execution of Malicious Code</h2>
-<p>The malicious SQL query runs on the database, potentially granting the attacker unauthorized access or allowing them to execute harmful commands, such as deleting data, altering records, or extracting sensitive information.</p>
+                <section class="w3-container">
+                    <h2>Types of SQL Injection</h2>
+        
+                    <h3>Classic SQL Injection</h3>
+                    <p>This is the most straightforward form of SQL injection, where the attacker directly manipulates the SQL query to perform unauthorized actions, such as bypassing authentication or retrieving sensitive data.</p>
+            
 
-<h2>Types of SQL Injection</h2>
+                    <h3>Blind SQL Injection</h3>
+                    <p><strong>Definition:</strong> In cases where the attacker does not receive direct error messages from the server, they may try to infer information about the database's structure by submitting queries that yield different behaviors based on true or false conditions.</p>
+                    <p><strong>Example:</strong> The attacker might use queries like:</p>
+            
+                    <pre>SELECT * FROM users WHERE username = '' AND 1=1;</pre>
+                    <pre>SELECT * FROM users WHERE username = '' AND 1=2;</pre>
+            
+                    <p>If the first query works (returns data) and the second one doesn’t, the attacker can deduce that the query logic is functional and that certain conditions hold.</p>
 
-<h3>Classic SQL Injection</h3>
-<p>This is the most straightforward form of SQL injection, where the attacker directly manipulates the SQL query to perform unauthorized actions, such as bypassing authentication or retrieving sensitive data.</p>
+            
+            
+                    <h3>Union-Based SQL Injection</h3>
+                    <p><strong>Definition:</strong> This technique involves using the UNION SQL operator to combine the results of the original query with results from other queries. This can allow the attacker to retrieve data from other tables or databases.</p>
+                    <p><strong>Example:</strong> The attacker might input the following:</p>
+            
+                    <pre>' UNION SELECT null, username, password FROM users;</pre>
+            
+                    <p>This query would return the usernames and passwords from the users table alongside the original query’s results.</p>
+            
 
-<br>
-<h3>Blind SQL Injection</h3>
-<p><strong>Definition:</strong> In cases where the attacker does not receive direct error messages from the server, they may try to infer information about the database's structure by submitting queries that yield different behaviors based on true or false conditions.</p>
-<p><strong>Example:</strong> The attacker might use queries like:</p>
+                </section>
+                <section class="w3-container">
+                    <h2>Consequences of SQL Injection</h2>
+                    <p>SQL Injection can have severe consequences for the affected system. Some of the potential impacts include:</p>
+            
+                    <ul class="w3-ul">
+                        <li><strong>Unauthorized Access to Data:</strong> Attackers can retrieve sensitive data such as user credentials, personal information, financial records, or intellectual property.</li>
+                        <li><strong>Data Corruption or Deletion:</strong> Attackers can modify, corrupt, or delete important data from the database, potentially leading to loss of data integrity.</li>
+                        <li><strong>Bypassing Authentication:</strong> Attackers can bypass login systems and gain administrative access to the application or backend services.</li>
+                        <li><strong>Complete Control of the Database:</strong> In more severe cases, attackers can escalate privileges, gain full control of the database, and even execute system commands.</li>
+                        <li><strong>Denial of Service (DoS):</strong> Attackers can overload the server by issuing expensive SQL queries or commands, leading to server downtime.</li>
+                        <li><strong>Reputation Damage:</strong> A successful SQL injection attack can severely damage the reputation of a business or website, leading to lost trust among customers and partners.</li>
+                        <li><strong>Legal and Compliance Issues:</strong> If the attack results in a data breach, the organization could face legal consequences or be fined for non-compliance with data protection regulations (e.g., GDPR, HIPAA).</li>
+                    </ul>
+                </section>
 
-<pre>SELECT * FROM users WHERE username = '' AND 1=1;</pre>
-<pre>SELECT * FROM users WHERE username = '' AND 1=2;</pre>
+                <br>
+                <section class="w3-container">
+                    <a href="ddos.html">Learn More About DDoS</a>
+                    <br>
+                    <a href="phishing.html">Learn More About Phishing</a>
+                </section>
 
-<p>If the first query works (returns data) and the second one doesn’t, the attacker can deduce that the query logic is functional and that certain conditions hold.</p>
-<br>
+            </div>
+        </div>
 
-
-<h3>Union-Based SQL Injection</h3>
-<p><strong>Definition:</strong> This technique involves using the UNION SQL operator to combine the results of the original query with results from other queries. This can allow the attacker to retrieve data from other tables or databases.</p>
-<p><strong>Example:</strong> The attacker might input the following:</p>
-
-<pre>' UNION SELECT null, username, password FROM users;</pre>
-
-<p>This query would return the usernames and passwords from the users table alongside the original query’s results.</p>
-
-<br>
-<h2>Consequences of SQL Injection</h2>
-<p>SQL Injection can have severe consequences for the affected system. Some of the potential impacts include:</p>
-
-<ul>
-    <li><strong>Unauthorized Access to Data:</strong> Attackers can retrieve sensitive data such as user credentials, personal information, financial records, or intellectual property.</li>
-    <li><strong>Data Corruption or Deletion:</strong> Attackers can modify, corrupt, or delete important data from the database, potentially leading to loss of data integrity.</li>
-    <li><strong>Bypassing Authentication:</strong> Attackers can bypass login systems and gain administrative access to the application or backend services.</li>
-    <li><strong>Complete Control of the Database:</strong> In more severe cases, attackers can escalate privileges, gain full control of the database, and even execute system commands.</li>
-    <li><strong>Denial of Service (DoS):</strong> Attackers can overload the server by issuing expensive SQL queries or commands, leading to server downtime.</li>
-    <li><strong>Reputation Damage:</strong> A successful SQL injection attack can severely damage the reputation of a business or website, leading to lost trust among customers and partners.</li>
-    <li><strong>Legal and Compliance Issues:</strong> If the attack results in a data breach, the organization could face legal consequences or be fined for non-compliance with data protection regulations (e.g., GDPR, HIPAA).</li>
-</ul>
-<a href="ProjectMain.html">Back to Home</a>
-<br>
-<a href="ddos.html">Learn More About DDoS</a>
-<br>
-<a href="phishing.html">Learn More About Phishing</a>
+    </div>
 </body>
 </html>
