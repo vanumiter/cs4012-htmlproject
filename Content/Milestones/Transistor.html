@@ -8,6 +8,32 @@
     <link rel="stylesheet" href="../../css/timelinesmall.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <title>Transistor</title>
+
+        <!-- animation -->
+        <style> 
+
+            body {
+                opacity: 0;
+                animation: fadeIn 1s ease-in-out forwards;
+            }
+    
+            .timeline {
+                opacity: 0;
+                animation: fadeIn 1s ease-in-out 0.5s forwards;
+            }
+    
+            .rightcolumn {
+                opacity: 0;
+                animation: fadeIn 1s ease-in-out 1.2s forwards;
+            }
+    
+            @keyframes fadeIn {
+                0% {opacity: 0;}
+                100% {opacity: 1;}
+            }
+    
+            
+        </style>
 <body>
     <div class = "header">
         <h1>History of Computer Science</h1>
@@ -24,32 +50,65 @@
             <div class="timeline">
                 <div class="container left">
                     <div class="content">
-                        <h3>2017</h3>
-                        <p>Lorem ipsum..</p>
+                        <a href="Early Computer Concepts.html" class="no-underline">
+                            <h5>The Early Concepts of a Computer</h5>
+                            <p>2000BC - 1830 AD</p>
+                        </a>
                     </div>
                 </div>
                 <div class="container right">
                     <div class="content">
-                        <h3>2016</h3>
-                        <p>Lorem ipsum..</p>
+                        <a href="Alan Turing.html" class="no-underline">
+                            <h5>Turing Machine</h5>
+                            <p>1936</p>
+                        </a>
                     </div>
                 </div>
                 <div class="container left">
                     <div class="content">
-                        <h3>2017</h3>
-                        <p>Lorem ipsum..</p>
+                        <a href="ENIAC.html" class="no-underline">
+                            <h5>ENIAC</h5>
+                            <p>1943</p>
+                        </a>
                     </div>
                 </div>
                 <div class="container right">
                     <div class="content">
-                        <h3>2016</h3>
-                        <p>Lorem ipsum..</p>
+                        <a href="Von Neumann.html" class="no-underline">
+                            <h5>Von Neumann Architecture</h5>
+                            <p>1945</p>
+                        </a>
                     </div>
                 </div>
+                <div class="container left">
+                    <div class="content">
+                        <a href="Transistor.html" class="no-underline">
+                            <h5>Transistors</h5>
+                            <p>1947</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <a href="Microprocessors.html" class="no-underline">
+                            <h5>Microprocessors</h5>
+                            <p>1971</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="container left">
+                    <div class="content">
+                        <a href="Modern Computers.html" class="no-underline">
+                            <h5>Modern Computers</h5>
+                            <p>1970s-Present</p>
+                        </a>
+            
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
     
-    <div class="row">
+
         <div class="rightcolumn">
             <div class="card">
                 <section class="w3-container">
@@ -67,6 +126,9 @@
                     <p>The concept of the tranisistor was created long before it's time. In 1947 , John Bardeen and Walter Brattain had successfully created the world's first transistor in Murray Hill, New Jersey. </p>
                     <p>During the middle of the 20th century, people relied on vacuum tubes to accomplish tasks. They were bulky, fragile and consumed a large amount of power. </p>
                 </section>
+            </div>
+        </div>
+    </div>
 
 
 

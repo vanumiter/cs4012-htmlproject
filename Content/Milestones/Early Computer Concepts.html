@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="../../css/Stylesheet.css">
     <link rel="stylesheet" href="../../css/timelinesmall.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- math rendering stuff-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+
+    <!-- The loading of KaTeX is deferred to speed up page rendering -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg" crossorigin="anonymous"></script>
+
+    <!-- To automatically render math in text elements, include the auto-render extension: -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" integrity="sha384-43gviWU0YVjaDtb/GhzOouOXtZMP/7XUzwPTstBeZFe/+rCMvRwr4yROQP43s0Xk" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
 
     <title>Early Concepts of Computers</title>
 
@@ -53,31 +62,65 @@
         <a href="../About.html">About</a>
     </div>
 
+    <!--timeline on left-->
     <div class="row">
         <div class="leftcolumn">
             <div class="timeline">
                 <div class="container left">
                     <div class="content">
-                        <h3>2017</h3>
-                        <p>Lorem ipsum..</p>
+                        <a href="Early Computer Concepts.html" class="no-underline">
+                            <h5>The Early Concepts of a Computer</h5>
+                            <p>2000BC - 1830 AD</p>
+                        </a>
                     </div>
                 </div>
                 <div class="container right">
                     <div class="content">
-                        <h3>2016</h3>
-                        <p>Lorem ipsum..</p>
+                        <a href="Alan Turing.html" class="no-underline">
+                            <h5>Turing Machine</h5>
+                            <p>1936</p>
+                        </a>
                     </div>
                 </div>
                 <div class="container left">
                     <div class="content">
-                        <h3>2017</h3>
-                        <p>Lorem ipsum..</p>
+                        <a href="ENIAC.html" class="no-underline">
+                            <h5>ENIAC</h5>
+                            <p>1943</p>
+                        </a>
                     </div>
                 </div>
                 <div class="container right">
                     <div class="content">
-                        <h3>2016</h3>
-                        <p>Lorem ipsum..</p>
+                        <a href="Von Neumann.html" class="no-underline">
+                            <h5>Von Neumann Architecture</h5>
+                            <p>1945</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="container left">
+                    <div class="content">
+                        <a href="Transistor.html" class="no-underline">
+                            <h5>Transistors</h5>
+                            <p>1947</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="container right">
+                    <div class="content">
+                        <a href="Microprocessors.html" class="no-underline">
+                            <h5>Microprocessors</h5>
+                            <p>1971</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="container left">
+                    <div class="content">
+                        <a href="Modern Computers.html" class="no-underline">
+                            <h5>Modern Computers</h5>
+                            <p>1970s-Present</p>
+                        </a>
+            
                     </div>
                 </div>
             </div>
@@ -87,8 +130,49 @@
         <div class="rightcolumn">
             <div class="card">
                 <section class="w3-container">
-                    <h2>Early Concepts of the Computer</h2>
+                    <h2><b>The Evolution of Computing</b></h2>
+                        <p>A computer, in its simplest form, is an instrument used to perform sequences of calculations automatically. One may view this idea narrowly, 
+                            attributing this form of calculation into a process restricted to mathematics. Throughout the history of computing, we see this narrow view of computers 
+                            evolve from a mere calculator crunching numbers, to a versatile device capable of processing, storing and communicating data, enabling complex tasks across countless 
+                            fields beyond mere calculation.</p>
                 </section>
+                <article class="w3-container">
+                    <h2><b>Computing Devices Throughout History</b></h2>
+                        <p>Before the digitization of computers, the early stages of computing consisted of using simple, analog tools to record quantities and aid calculation.</p>
+                        <img src="../Images/abacus.jpg" id="imgright" alt="abacus" style="width:40%;">
+                        <p>Tally sticks may have been the earliest form of a counting device - an example being a baboon's bone with 29 distinct notches dated around 44,000 years old.
+                            The early forms of an abacus began appearing in the earliest known civilization, Sumer, around 2700 BC. The abacus allowed for a two-dimensional representation of numbers in which arithmetic operations were possible, 
+                            such as addition and subtraction. It continued to be used throughout later major civilizations from Ancient Egypt, to Medieval Europe.
+                        </p>
+                        <p>As society sought to explore the world beyond their own regions, computing devices evolved to aid their astronomical and navigational pursuits.</p>
+                        <img src="../Images/planisphere.jpg" id="imgright" alt="planisphere" style="width:30%;">
+                        <p>The planisphere is a computing instrument in the form of two adjustable disks rotating on a pivot. It is used to chart the stars, 
+                            displaying the visible stars in the sky for any time and date. The position of stars at the time were used by sailors for navigation, determining direction and position at sea.</p>
+                        <p>Around the 17th century, astronomical calculations were becoming too long and tedious to calculate in a feasible amount of time. After the discovery of logarithms in 1614, 
+                            enabling a significant simplification for tedious calculations back then. Mathematics has progressed from algebra, to more complex ideas such as logarithms and calculus. 
+                            In order to accommodate the paradigm shift in mathematics, computing instruments too were needed to progress. </p>
+                        <h3><b>The Analytical Engine</b></h3>
+                            <img src="../Images/analytical engine.jpg" id="imgright" alt="analytical engine" style="width:23%; margin:10px;">
+                            <p>After the discovery of the logarithm, Charles Babbage's analytical engine was conceived, seeking out to automate such tedious calculations to a pinpoint accuracy. 
+                                Through mechanical assembly and steam power, It was to be capable of calculating not only basic arithmetic, but also algebraic, and transcendental (non-algebraic functions, e.g. logarithms/exponents) 
+                                formulae such as \(a^x(y-z)^2\) . </p>
+                            <p>The Analytical Engine consisted of:</p>
+                            <ul class="w3-ul">
+                                <li>The mill; he calculating unit akin to a CPU</li>
+                                <li>The store; where data was stored in processing much like memory and storage</li>
+                                <li>The reader; taking punched cards in which instructions were entered into, allowing for programming, thus acting as the input device</li>
+                                <li>The printer; which served as the output device.</li>
+                            </ul>
+                            <p>It was thus much more than a simple calculator of its time; capable of solving complex problems and programmability, much like modern computers. It was to be a general-purpose, programmable, automatic digital computer.
+                                Due to limiting technologies at the time, Babbage's vision was never fully realized. It however, played a significant role in serving as the basis of the modern computers to come. 
+                                It was only in 1944 during World War II with the construction of the Harvard Mark I, that the idea of a general-purpose computer came to fruition. The Mark I involved technological advancements since Babbage's time, 
+                                and was used to assist in complex calculations, much of which was in the context of military and scientific applications during World War II. 
+                            </p>
+                            <p>Throughout history, the evolution of computing instruments have been driven by society's changing needs, such as navigation, astronomy, mathematics and military use. Over time, 
+                                it has continued to advance into nearly every sector of human endeavor. Today, there are not many fields left which computing has not explored, highlighting the 
+                                seemingly unlimited potential of computing, and its transformative role in shaping our world.</p>
+                </article>
             </div>
         </div>
+    </div>
 </body>
