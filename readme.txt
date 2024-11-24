@@ -17,5 +17,6 @@ extra to-do:
 - add audios, videos (demonstration or interview videos maybe?)
 Videos in
 - ENIAC (https://www.youtube.com/watch?v=k4oGI_dNaPc)
-- Transistor (https://www.youtube.com/watch?v=AwXp6jVaTV4)  
+- Transistor (https://www.youtube.com/watch?v=AwXp6jVaTV4) 
+- Turing machine (https://www.youtube.com/watch?v=gJQTFhkhwPA)
 
