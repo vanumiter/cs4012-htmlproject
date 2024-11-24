@@ -15,5 +15,4 @@
 
 extra to-do:
 - add audios, videos (demonstration or interview videos maybe?)
-- fix search bar in list
 
